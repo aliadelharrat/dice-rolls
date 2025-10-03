@@ -21,7 +21,7 @@ def main():
                 print("Thanks for playing!")
                 break
 
-            print(roll_dice(int(user_input)))
+            print(*roll_dice(int(user_input)), sep=', ')
         except ValueError :
             print("(Please enter a valid number)")
 
